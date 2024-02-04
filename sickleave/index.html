@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>My Resume</title>
+	<link rel='stylesheet' href='style.css' />
+</head>
+<body id="top">
+	<section class='master'>
+		<div>
+			<h1 style="align-self: center">Sick Leave form</h1>
+			<form class="'form">
+				<label for="Employee_name">Employee Name</label>
+				<input type='text' id="Employee_name" name="Employee_name"/>
+
+				<label for="Employee_id">Employee id</label>
+				<input type='text' id="id" name="id"/>
+
+				<label for="department_name">department Name</label>
+				<input type='text' id="department_name" name="department_name"/>
+
+				<label for="start_date">Start date</label>
+				<input type='date' id="start_date" name="start_date"/>
+
+				<label for="end_date">End date</label>
+				<input type='date' id="end_date" name="end_date"/>
+
+				<label for="reason">Reason</label>
+				<textarea id="reason" name="reason" rows="4">Enter text</textarea>
+
+				<button type="submit" onclick="onSubmit()">Submit Button</button>
+			</form>
+		<script>
+			function onSubmit(){
+				return(
+					alert('Submitted')
+				)
+			}
+
+		</script>
+
+
+		</div>	
+	
+	</section>
+	
+</body>
+</html>
