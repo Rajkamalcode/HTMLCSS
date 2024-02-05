@@ -6,27 +6,50 @@
 <body id="top">
 	<section class='master'>
 		<div>
-			<h1 style="align-self: center">Sick Leave form</h1>
-			<form class="'form">
+			<h1 style="align-self: center">User registration form</h1>
+			<form class="form">
 				<label for="Employee_name">Employee Name</label>
 				<input type='text' id="Employee_name" name="Employee_name"/>
 
 				<label for="Employee_id">Employee id</label>
 				<input type='text' id="id" name="id"/>
 
+				<label for="Employee_email">Employee email</label>
+				<input type='email' id="Employee_email" name="email"/>
+
 				<label for="department_name">department Name</label>
 				<input type='text' id="department_name" name="department_name"/>
 
-				<label for="start_date">Start date</label>
-				<input type='date' id="start_date" name="start_date"/>
+				<label for="join_date">join date</label>
+				<input type='date' id="join_date" name="join_date"/>
 
-				<label for="end_date">End date</label>
-				<input type='date' id="end_date" name="end_date"/>
+				<label for="desc">Description</label>
+				<textarea id="desc" name="desc" rows="4">Enter Description</textarea>
 
-				<label for="reason">Reason</label>
-				<textarea id="reason" name="reason" rows="4">Enter text</textarea>
+				<label for="designation">designation</label>
 
-				<button type="submit" onclick="onSubmit()">Submit Button</button>
+				<select name="designation" id="designation">
+					<option value="developer">developer</option>
+					<option value="eng">Engineer</option>
+					<option value="test">Tester</option>
+					<option value="staff">Staff</option>
+				</select>
+
+				<label for="myfile">Upload Passport Image:</label>
+				<input type="file" id="myfile" name="myfile">
+
+				<label for="sports"> Is sports quota </label><br>
+				<input type="checkbox" id="recurring" name="recurring" value="rec">
+				<label for="differently_abled">Is differently abled</label><br>
+				<input type="checkbox" id="differently_abled" name="differently_abled" value="diff">
+
+				<label for="radio">Is a fresher</label>
+				<input id="radio" type="radio" name='radio'></input>
+
+				<label for='happiness'> Rate your happiness </label>
+				<input id='	happiness' type='range'></input>
+				<button type="submit" 
+				onclick="onSubmit()">Submit Button</button>
 			</form>
 		<script>
 			function onSubmit(){
